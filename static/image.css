@@ -1,0 +1,21 @@
+.responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.static {
+  display: block;
+  width: 100%;
+  height: 25vh;
+}
+.bg-pink {
+  background-color: #d63384 !important;
+}
+.bg-yellow {
+  background-color: #beb539 !important;
+}
+.bg-green {
+  background-color: #4abe39 !important;
+}
