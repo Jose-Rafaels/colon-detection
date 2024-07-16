@@ -13,7 +13,7 @@ def predict(img_path , model_path, target_size) :
     # Prediksi
     prediction = model.predict(img_array)
     # Mendekode prediksi
-    predicted_class = 'colon_n' if prediction[0] > 0.5 else 'colon_aca'
+    predicted_class = 'colon benign tissue' if prediction[0] > 0.5 else 'colon adenocarcinoma'
     confidence = prediction[0][0] * 100  # Konversi ke persentase
     return predicted_class, confidence
 

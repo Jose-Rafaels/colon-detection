@@ -73,7 +73,6 @@ content %}
           </div>
         </div>
       </div>
-      <!-- <div class="row"> -->
       <div class="card mx-auto mt-3" style="width: 60vh">
         <div class="card-body">
           <h5 class="text-center card-title">Image</h5>
@@ -83,9 +82,12 @@ content %}
             src="{{ url_for('static',filename=data.image) }}"
             alt="image"
           />
+          <div class="text-center">
+            Gambar kanker usus besar diatas tergolong class
+            {{data.result_inceptionV3}}
+          </div>
           {% endif %}
         </div>
-        <!-- </div> -->
       </div>
     </div>
   </div>
